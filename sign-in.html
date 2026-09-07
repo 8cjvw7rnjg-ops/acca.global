@@ -1,0 +1,985 @@
+<body style=""><noscript><div id="no_js" ><div class="error_container"><div><h1>We can't sign you in</h1><p>Your browser is currently set to block JavaScript. You need to allow JavaScript to use this service.</p><p>To learn how to allow JavaScript or to find out whether your browser supports JavaScript, check the online help in your web browser.</p></div></div></div></noscript><div id="no_cookie" nonce="YonP3DXRPP0I85E87HkjRA=="></script></div></div></div><script>_satellite["_runScript1"](function(event, target, Promise) {
+// debug logging function
+window.adobeDataLayer = window.adobeDataLayer || [];
+var myHandler = function (event) {
+    if (localStorage.getItem("com.adobe.reactor.debug") === "true") {
+        console.log(
+            "%c[Adobe Data Layer Logging] event type: " + event.event, "background: palegreen", "State:", JSON.stringify(adobeDataLayer.getState(), null, 2)
+        );
+    }
+};
+
+// add event listener
+window.adobeDataLayer.push(function (dl) {
+    dl.addEventListener("adobeDataLayer:event", myHandler);
+});
+
+});</script>
+<header>
+
+  <div class="container" style="padding-left: 12px !important; padding-right: 25px !important;">
+
+    <nav class="navbar navbar-expand-xxl bg-white static-top"
+         style="padding-top: 12px !important; padding-bottom: 0 !important;">
+
+      <div class="container-fluid px-0">
+
+        <!-- ACCA LOGO -->
+        <a class="navbar-brand p-0" href="/">
+          <img src="AccaImage.png"
+               alt="ACCA logo"
+               style="width: 45px; height: auto; display: block;">
+        </a>
+
+      </div>
+
+    </nav>
+
+  </div>
+
+</header>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="title-container"><style>
+    .acca-heading {
+        font-family: Helvetica, sans-serif;
+        font-size: 35px;
+        font-weight: 390;
+        color: #1f1f1f;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<h1 class="acca-heading" style="position: relative; top: 28px; left: 20px;">
+  Sign in to MyACCA
+</h1>
+
+        <div class="login-container">
+            <div class="content">
+                
+    
+  
+                <div>
+</div>
+<div>
+    <br>
+</div>
+
+ <!-- This will render the content of the view -->
+                <div id="api" data-name="Unified">
+      <div class="heading" style="display: none;">
+        <h1 role="heading">Sign in</h1>
+      </div>
+        <div class="claims-provider-list-buttons social" aria-label="Sign in with your social account" role="form">
+          <div class="intro">
+            
+          </div>
+          <div class="options">
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+          </div>
+        </div>
+
+        <div class="divider">
+          <h2></h2>
+        </div>
+      <form id="localAccountForm" class="localAccount form-styled" aria-label="Sign in with your username">
+        <div class="intro">
+          
+        </div>
+        <div class="error pageLevel" aria-hidden="true" role="alert">
+          <p></p>
+        </div>
+        <div class="entry">
+          <div class="entry-item">
+              <label for="signInName" style="display: flex; align-items: center;"><span></span><span aria-hidden="true" style="color: red;"> </span></label>
+            <div class="error itemLevel" aria-hidden="true" role="alert">
+              <p></p>
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sign in</title>
+
+<style>
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* MAIN LOGIN BOX */
+.signin-box {
+  width: 94%;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 40px 50px;
+  border: 1px solid #d0d0d0;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+/* LABELS */
+.email-label label,
+.password-label label {
+  display: block;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* USERNAME AND PASSWORD BOXES */
+#signInName,
+#password {
+  width: 100%;
+  height: 52px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  padding: 10px 14px;
+  font-size: 17px;
+  background: #fff;
+}
+
+#signInName:focus,
+#password:focus {
+  outline: none;
+  border: 2px solid #555;
+}
+
+/* SPACING BETWEEN SECTIONS */
+.entry-item {
+  margin-bottom: 35px;
+}
+
+/* PASSWORD CONTAINER */
+.password-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* LINKS */
+#forgotPassword,
+.entry-item a {
+  display: block;
+  margin-top: 14px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: underline;
+}
+
+/* FORGOTTEN USERNAME */
+#SetIsForgotUsernameExchange {
+  display: block;
+  margin-top: 14px;
+  padding: 0;
+  height: auto;
+  border: none;
+  background: none;
+  color: #333;
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* SIGN IN BUTTON */
+#next {
+  width: 180px;
+  height: 52px;
+  margin-top: 5px;
+  border: 1px solid #333;
+  background: #333;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+#next:hover {
+  background: #222;
+}
+
+/* DIVIDER */
+.buttons hr {
+  margin: 40px 0 30px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+/* CREATE ACCOUNT TEXT */
+.buttons p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.buttons p small {
+  display: block;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* CREATE ACCOUNT BUTTON */
+#SetIsSignUpExchange {
+  height: 52px;
+  padding: 0 25px;
+  border: 1px solid #333;
+  background: #fff;
+  color: #333;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+#SetIsSignUpExchange:hover {
+  background: #f2f2f2;
+}
+
+/* ERROR */
+.error {
+  color: #c00;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* BOTTOM WRITING */
+.pageDescription {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 30px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<form id="localAccountForm">
+
+  <div class="signin-box">
+
+    <!-- USERNAME -->
+
+    <div class="entry-item">
+
+     <div class="email-label">
+  <label for="signInName">
+    <span style="color: #000000;">Username</span>
+    <span aria-hidden="true" style="color: red;">*</span>
+  </label>
+</div>
+
+      <div class="error itemLevel" aria-hidden="true">
+        <p role="alert"></p>
+      </div>
+
+      <input
+        type="text"
+        id="signInName"
+        name="Username"
+        title="Enter the email address you registered at the time of setting up your account OR enter your ACCA ID."
+        aria-required="true"
+        autofocus
+        placeholder=""
+        aria-label="Username"
+        class="form-element">
+
+      <button
+        class="accountButton firstButton claims-provider-selection"
+        id="SetIsForgotUsernameExchange"
+        role="link"
+        type="button">
+
+        Forgotten your username?
+
+      </button>
+
+    </div>
+
+
+    <!-- PASSWORD -->
+
+    <div class="entry-item">
+
+      <div class="password-label">
+
+     
+  <label for="password">
+    <span style="color: #000000;">Password</span>
+          <span aria-hidden="true" style="color: red;"> *</span>
+        </label>
+
+      </div>
+
+      <div class="error itemLevel" aria-hidden="true">
+        <p role="alert"></p>
+      </div>
+
+
+      <div class="password-container">
+
+        <input
+          type="password"
+          id="password"
+          name="Password"
+          placeholder=""
+          aria-label="Password"
+          autocomplete="current-password"
+          aria-required="true"
+          class="form-element">
+
+
+        <span id="togglePassword">
+
+          <img
+            src="/images/Eye_24px.svg"
+            alt="Show Password"
+            width="20"
+            height="20">
+
+        </span>
+
+      </div>
+
+
+      <a id="forgotPassword" href="#">
+        Forgotten your password?
+      </a>
+
+      <a
+        href="http://www.accaglobal.com/documents/ProblemsLoggingIn"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        Having problems signing in?
+
+      </a>
+
+    </div>
+
+
+    <!-- SIGN IN / CREATE ACCOUNT -->
+
+    <div class="buttons">
+
+      <div class="working" style="display:none;"></div>
+
+
+      <button
+        id="next"
+        type="submit"
+        form="localAccountForm"
+        class="form-element">
+
+        Sign in
+
+      </button>
+
+
+      <hr>
+
+
+<p style="color: #000000;">
+
+  Don't have an account?
+
+  <small style="color: #000000;">
+    If you don't have a login, create an account to continue.
+  </small>
+
+</p>
+
+
+      <button
+        class="accountButton claims-provider-selection"
+        id="SetIsSignUpExchange"
+        role="link"
+        type="button">
+
+        Create Account
+
+      </button>
+
+    </div>
+
+
+    <!-- BOTTOM TEXT -->
+
+    <div>
+
+   <p class="pageDescription" style="color: #000000;">
+  Keeping your contact and employment details up to date will allow us to contact you and tailor our communications to your needs.
+</p>
+
+<p class="pageDescription" style="color: #000000;">
+  Remember to save any changes you make. For your personal security you will automatically be logged out of your account after 20 minutes of inactivity.
+</p>
+    </div>
+
+  </div>
+
+</form>
+
+
+<script>
+
+/* ============================
+   DEMO SIGN IN
+   ============================ */
+
+document.getElementById("localAccountForm").addEventListener("submit", function(event) {
+
+  event.preventDefault();
+
+  const username = document.getElementById("signInName").value;
+  const password = document.getElementById("password").value;
+
+
+  if (
+    username === "6583624" &&
+    password === "Precious190305!"
+  ) {
+
+    /*
+       CHANGE THIS TO THE NAME
+       OF YOUR PAGE
+    */
+
+    window.location.href = "home.html";
+
+  }
+
+  else {
+
+    alert("Incorrect username or password.");
+
+  }
+
+});
+
+
+/* ============================
+   SHOW / HIDE PASSWORD
+   ============================ */
+
+const togglePassword =
+  document.getElementById("togglePassword");
+
+const passwordInput =
+  document.getElementById("password");
+
+
+if (togglePassword) {
+
+  togglePassword.addEventListener("click", function() {
+
+    if (passwordInput.type === "password") {
+
+      passwordInput.type = "text";
+
+    }
+
+    else {
+
+      passwordInput.type = "password";
+
+    }
+
+  });
+
+}
+
+</script>
+
+</body>
+</html>
+<div id="forgotPasswordContainer"></div>  
+        
+            
+<style>
+.my-social-row {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    overflow: visible !important;
+    transform: translateX(-30px);
+}
+
+.my-social-link {
+    display: flex !important;
+    flex: 0 0 24px !important;
+    width: 24px !important;
+    min-width: 24px !important;
+    height: 24px !important;
+    margin-right: 4px !important;
+    padding: 0 !important;
+    text-decoration: none !important;
+    border: none !important;
+}
+
+.my-social-link svg {
+    display: block !important;
+    width: 24px !important;
+    height: 24px !important;
+    margin-top: 25px !important;
+}
+</style>
+
+<style>
+footer a.me-2 {
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+footer a.me-2:hover,
+footer a.me-2:focus,
+footer a.me-2:active,
+footer a.me-2:visited {
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+</style>
+
+<footer class="py-3 bg-transparent mt-auto">
+
+  <div class="container">
+
+    <div style="display:flex; flex-direction:row; flex-wrap:nowrap; align-items:center; gap:8px;">
+
+      <!-- SOCIAL MEDIA ICONS -->
+
+<div style="
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin: 0 auto;
+">
+
+  <!-- FACEBOOK -->
+  <a href="https://www.facebook.com/ACCA.Official"
+     aria-label="Facebook"
+     style="display: block; margin: 0 !important; padding: 0 !important; text-decoration: none !important;">
+
+    <svg width="24" height="24" viewBox="0 0 16 16"
+         fill="none"
+         xmlns="http://www.w3.org/2000/svg"
+         aria-hidden="true">
+
+      <path fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M14 1C14.5523 1 15 1.44772 15 2V14C15 14.5523 14.5523 15 14 15H2C1.44772 15 1 14.5523 1 14V2C1 1.44772 1.44772 2 2 1H14ZM9 5H10V3H9C7.34315 3 6 4.34315 6 6V7H5V9H6V13H8V9H10V7H8V6C8 5.44772 8.44772 5 9 5Z"
+            fill="black">
+      </path>
+
+    </svg>
+  </a>
+
+
+  <!-- YOUTUBE -->
+  <a href="https://www.youtube.com/user/ACCAOfficial"
+     aria-label="YouTube"
+     style="display: block; margin: 0 !important; padding: 0 !important; text-decoration: none !important;">
+
+    <svg width="24" height="24" viewBox="0 0 16 16"
+         fill="none"
+         xmlns="http://www.w3.org/2000/svg"
+         aria-hidden="true">
+
+      <path fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M14 1C14.5523 1 15 1.44772 15 2V14C15 14.5523 14.5523 15 14 15H2C1.44772 15 1 14.5523 1 14V2C1 1.44772 1.44772 2 2 1H14ZM6 5V11L12 8L6 5Z"
+            fill="black">
+      </path>
+
+    </svg>
+  </a>
+
+
+  <!-- X -->
+  <a href="https://twitter.com/ACCANews"
+     aria-label="X"
+     style="display: block; margin: 0 !important; padding: 0 !important; text-decoration: none !important;">
+
+    <svg width="24" height="24" viewBox="0 0 16 16"
+         fill="none"
+         xmlns="http://www.w3.org/2000/svg"
+         aria-hidden="true">
+
+      <path d="M1 2C1 1.44772 1.44772 1 2 1H14C14.5523 1 15 1.44772 15 2V14C15 14.5523 14.5523 15 14 15H2C1.44772 15 1 14.5523 1 14V2Z"
+            fill="black">
+      </path>
+
+      <path d="M10.9007 3H12.4335L9.06798 7.24354L13 13H9.91436L7.4985 9.50185L5.71576 3.95941H9.51849L10.3642 12.0037H11.2139L5.71576 3.95941H9.51849L10.3642 12.0037Z"
+            fill="white">
+      </path>
+
+    </svg>
+  </a>
+
+
+  <!-- LINKEDIN -->
+  <a href="https://www.linkedin.com/school/162244"
+     aria-label="LinkedIn"
+     style="display: block; margin: 0 !important; padding: 0 !important; text-decoration: none !important;">
+
+    <svg width="24" height="24" viewBox="0 0 16 16"
+         fill="none"
+         xmlns="http://www.w3.org/2000/svg"
+         aria-hidden="true">
+
+      <path fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M2 1C1.44772 1 1 1.44772 1 2V14C1 14.5523 1.44772 15 2 15H14C14.5523 15 15 14.5523 15 14V2C15 1.44772 14.5523 1 14 1H2ZM5.30769 4.07428C5.30898 3.48493 4.78923 3.0004 4.15943 3C3.5219 2.9996 3 3.48053 3 4.06988C3 4.67764 3.53866 5.15457 4.1517 5.14257C4.75613 5.15617 5.30597 4.69125 5.30769 4.07428ZM3 12.5536C3 12.7495 3.25757 13 3.46154 13H6.30769C5.04963 13 5.30769 12.749 5.30769 12.5536V6.2116C5.30769 6.01612 5.14221 5.85714 4.93874 5.85714H3.36895C3.16498 5.85714 3 6.01612 3 6.2116V12.5536ZM10.5588 5.85714C11.9069 5.85714 13 6.9233 13 8.2381V12.5536C13 12.6327 12.6196 13 12.5385 13H11.1538C11.0727 13 10.6923 12.6327 10.6923 12.5536V8.98214C10.6923 8.64736 10.64 8.34485 10.4148 8.12572C10.1873 7.90284 9.87043 7.76659 9.5219 7.77033C8.83828 7.77829 8.38462 8.31538 8.38462 8.98214V12.5536C8.38462 12.6327 8.00421 13 7.92308 13H6.53846C6.45733 13 6.07692 12.6332 6.07692 12.5536V6.17882C6.07692 6.09969 6.14269 6.03507 6.2243 6.03507H8.10474C8.18635 6.03507 8.25212 6.09969 8.25212 6.17882V6.94859C8.25212 6.94859 8.25932 7.39549 8.27228 7.39736C8.28951 7.36707 8.30738 7.23765 8.32594 7.10322C8.34669 6.95296 8.36831 6.79643 8.39086 6.76504C8.78259 6.21628 9.43453 5.85714 10.1719 5.85714H10.5588Z"
+            fill="black">
+      </path>
+
+    </svg>
+  </a>
+
+
+  <!-- TIKTOK -->
+  <a href="https://www.tiktok.com/@accaglobal"
+     aria-label="TikTok"
+     style="display: block; margin: 0 !important; padding: 0 !important; text-decoration: none !important;">
+
+    <svg width="24" height="24" viewBox="0 0 16 16"
+         fill="black"
+         xmlns="http://www.w3.org/2000/svg"
+         aria-hidden="true">
+
+      <path fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M2 1C1.44772 1 1 1.44772 1 2V14C1 14.5523 1 15 2 15H14C14.5523 15 15 14.5523 15 14V2C15 1.44772 15 1 14 1H2ZM10.3773 4.61677C10.6807 4.97762 11.0842 5.23709 11.5401 5.34284C11.6913 5.37773 11.8454 5.39528 12 5.39525V7.10682C11.1833 7.10682 10.4271 6.82408 9.80988 6.34353L9.80995 9.83629C9.80995 11.5836 8.50929 13 6.90493 13C6.09109 13 5.35546 12.6356 4.82797 12.0482C4.31566 11.4779 4 10.6973 4 9.83625C4 8.11134 5.26766 6.70879 6.84374 6.67332C6.99742 6.66978 7.15116 6.67943 7.30349 6.70217V8.452C7.17314 8.40695 7.03718 8.38415 6.9004 8.38418C6.16648 8.38418 5.5716 9.03214 5.5716 9.83128C5.57117 10.1478 5.66642 10.4557 5.84266 10.7074C6.08548 11.0544 6.46873 11.2785 6.90029 11.2785C7.63264 11.2785 8.2265 10.6332 8.22909 9.83621V3H9.80988V3.22014C9.8547 3.75639 10.0618 4.24143 10.3773 4.61677Z"
+            fill="black">
+      </path>
+
+    </svg>
+  </a>
+
+</div>
+
+</footer>
+     
+    
+    </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <hr>
+  </div>
+</div>
+
+<div class="d-flex flex-wrap flex-column flex-sm-row">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; row-gap: 15px;">
+
+  <!-- TOP ROW -->
+
+  <div style="width: 50%; text-align: center;">
+    <a href="https://www.accaglobal.com/?_gl=1*e3e9xo*_ga*OTI5NjY4NTMxLjE3NTM3Nzc0Njg.*_ga_J7W3P5MX6E*czE3NTM3ODU2NDUkbzMkZzEkdDE3NTM3ODc0OTQkajU3JGwwJGgw"
+       style="color: #000000 !important; text-decoration: none !important;">
+      &copy;2026 ACCA Global
+    </a>
+  </div>
+
+  <div style="width: 50%; text-align: center;">
+    <a href="https://www.accaglobal.com/gb/en/footertoolbar/access.html"
+       style="color: #000000 !important; text-decoration: none !important;">
+      Accessibility
+    </a>
+  </div>
+
+
+  <!-- BOTTOM ROW -->
+
+  <div style="width: 50%; text-align: center;">
+    <a href="https://www.accaglobal.com/gb/en/footertoolbar/legal.html"
+       style="color: #000000 !important; text-decoration: none !important;">
+      Legal Policies
+    </a>
+  </div>
+
+  <div style="width: 50%; text-align: center;">
+    <a href="https://www.accaglobal.com/gb/en/footertoolbar/privacy.html"
+       style="color: #000000 !important; text-decoration: none !important;">
+      Data Protection &amp; cookies
+    </a>
+  </div>
+
+</div>
+	
+
+	<script type="text/javascript">
+
+		function trackCopilotCustomUsage(botSchema) {
+			const request = {
+				botSchemaName: botSchema
+			}
+			var json = JSON.stringify(request);
+			shell.ajaxSafePost({
+				type: "POST",
+				contentType: "application/json",
+				url: "/_services/copilot/TrackUsage",
+				data: json
+			}).done(function () {
+			}).fail(function (jqXhr) {
+			});
+		}
+
+		function findAndLogCustomCopilotUsage() {
+			const pageSource = document.documentElement.outerHTML;
+			const customPvaBotWebchatRegex = /api\.(preprod\.|test\.)?powerplatform\.(com|us|cn|appsplatform\.us)\/powervirtualagents\/botsbyschema\/([^/]+)\/directline\/token/;
+			const customPvaBotIframeRegex = /powerva\.microsoft\.com\/environments\/([0-9a-fA-F\-]+)\/bots\/([^/]+)\/webchat/;
+			const omniChannelRegex = /livechatwidget\/scripts\/LiveChatBootstrapper\.js/;
+
+			const matchPvaBotWebchat = pageSource.match(customPvaBotWebchatRegex);
+			if (matchPvaBotWebchat && matchPvaBotWebchat[3]) {
+				trackCopilotCustomUsage(matchPvaBotWebchat[3]);
+			}
+
+			const matchPvaBotIframe = pageSource.match(customPvaBotIframeRegex);
+			if (matchPvaBotIframe && matchPvaBotIframe[2]) {
+				trackCopilotCustomUsage(matchPvaBotIframe[2]);
+			}
+
+			const matchOmniChannel = pageSource.match(omniChannelRegex);
+			if (matchOmniChannel && matchOmniChannel[0]) {
+				trackCopilotCustomUsage("omnichannelWidget");
+			}
+		}
+
+		window.addEventListener("load", function () {
+			findAndLogCustomCopilotUsage();
+		});
+	</script>
+
+		
+			
+			
+			
+			
+		
+	<script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/bootstrap.BootstrapV5.bundle-be8391e97d.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/bootstrap.BootstrapV5.bundle-be8391e97d.js" type="text/javascript"></script>
+
+	<script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/postpreform.BootstrapV5.bundle-1e48131190.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/postpreform.BootstrapV5.bundle-1e48131190.js" type="text/javascript"></script>
+
+	<script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/app.BootstrapV5.bundle-4299f393fc.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/app.BootstrapV5.bundle-4299f393fc.js" type="text/javascript"></script>
+
+	<script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/default-1033.moment_2_29_4.bundle-eda4e638fd.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/default-1033.moment_2_29_4.bundle-eda4e638fd.js" type="text/javascript"></script>
+
+	
+
+	
+	
+	<script type="text/javascript">
+    window.myAccaAdobe = {
+        ...window.myAccaAdobe,
+        "pageUrl" : "/",
+        "pageName" : "MyACCA",
+        "pageId" : "88813783-b818-4678-a88e-c702c41f64cc",
+
+        
+            "contactId" : "3f855b27-0388-42d9-9951-16a53fbb9a40",
+            "accaId" : "6583624",
+        
+
+        
+    };
+</script>
+<script src="https://assets.adobedtm.com/bd662320aaa7/98675746a2e2/launch-EN4c8bea9d45114431a8bc35a4ce50e9d9.min.js" async=""></script>
+
+<script type="text/javascript" class="optanon-category-C0002">
+    !(function (cfg) { function e() { cfg.onInit && cfg.onInit(n) } var x, w, D, t, E, n, C = window, O = document, b = C.location, q = "script", I = "ingestionendpoint", L = "disableExceptionTracking", j = "ai.device."; "instrumentationKey"[x = "toLowerCase"](), w = "crossOrigin", D = "POST", t = "appInsightsSDK", E = cfg.name || "appInsights", (cfg.name || C[t]) && (C[t] = E), n = C[E] || function (g) { var f = !1, m = !1, h = { initialize: !0, queue: [], sv: "8", version: 2, config: g }; function v(e, t) { var n = {}, i = "Browser"; function a(e) { e = "" + e; return 1 === e.length ? "0" + e : e } return n[j + "id"] = i[x](), n[j + "type"] = i, n["ai.operation.name"] = b && b.pathname || "_unknown_", n["ai.internal.sdkVersion"] = "javascript:snippet_" + (h.sv || h.version), { time: (i = new Date).getUTCFullYear() + "-" + a(1 + i.getUTCMonth()) + "-" + a(i.getUTCDate()) + "T" + a(i.getUTCHours()) + ":" + a(i.getUTCMinutes()) + ":" + a(i.getUTCSeconds()) + "." + (i.getUTCMilliseconds() / 1e3).toFixed(3).slice(2, 5) + "Z", iKey: e, name: "Microsoft.ApplicationInsights." + e.replace(/-/g, "") + "." + t, sampleRate: 100, tags: n, data: { baseData: { ver: 2 } }, ver: undefined, seq: "1", aiDataContract: undefined } } var n, i, t, a, y = -1, T = 0, S = ["js.monitor.azure.com", "js.cdn.applicationinsights.io", "js.cdn.monitor.azure.com", "js0.cdn.applicationinsights.io", "js0.cdn.monitor.azure.com", "js2.cdn.applicationinsights.io", "js2.cdn.monitor.azure.com", "az416426.vo.msecnd.net"], o = g.url || cfg.src, r = function () { return s(o, null) }; function s(d, t) { if ((n = navigator) && (~(n = (n.userAgent || "").toLowerCase()).indexOf("msie") || ~n.indexOf("trident/")) && ~d.indexOf("ai.3") && (d = d.replace(/(\/)(ai\.3\.)([^\d]*)$/, function (e, t, n) { return t + "ai.2" + n })), !1 !== cfg.cr) for (var e = 0; e < S.length; e++)if (0 < d.indexOf(S[e])) { y = e; break } var n, i = function (e) { var a, t, n, i, o, r, s, c, u, l; h.queue = [], m || (0 <= y && T + 1 < S.length ? (a = (y + T + 1) % S.length, p(d.replace(/^(.*\/\/)([\w\.]*)(\/.*)$/, function (e, t, n, i) { return t + S[a] + i })), T += 1) : (f = m = !0, s = d, !0 !== cfg.dle && (c = (t = function () { var e, t = {}, n = g.connectionString; if (n) for (var i = n.split(";"), a = 0; a < i.length; a++) { var o = i[a].split("="); 2 === o.length && (t[o[0][x]()] = o[1]) } return t[I] || (e = (n = t.endpointsuffix) ? t.location : null, t[I] = "https://" + (e ? e + "." : "") + "dc." + (n || "services.visualstudio.com")), t }()).instrumentationkey || g.instrumentationKey || "", t = (t = (t = t[I]) && "/" === t.slice(-1) ? t.slice(0, -1) : t) ? t + "/v2/track" : g.endpointUrl, t = g.userOverrideEndpointUrl || t, (n = []).push((i = "SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)", o = s, u = t, (l = (r = v(c, "Exception")).data).baseType = "ExceptionData", l.baseData.exceptions = [{ typeName: "SDKLoadFailed", message: i.replace(/\./g, "-"), hasFullStack: !1, stack: i + "\nSnippet failed to load [" + o + "] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: " + (b && b.pathname || "_unknown_") + "\nEndpoint: " + u, parsedStack: [] }], r)), n.push((l = s, i = t, (u = (o = v(c, "Message")).data).baseType = "MessageData", (r = u.baseData).message = 'AI (Internal): 99 message:"' + ("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) (" + l + ")").replace(/\"/g, "") + '"', r.properties = { endpoint: i }, o)), s = n, c = t, JSON && ((u = C.fetch) && !cfg.useXhr ? u(c, { method: D, body: JSON.stringify(s), mode: "cors" }) : XMLHttpRequest && ((l = new XMLHttpRequest).open(D, c), l.setRequestHeader("Content-type", "application/json"), l.send(JSON.stringify(s))))))) }, a = function (e, t) { m || setTimeout(function () { !t && h.core || i() }, 500), f = !1 }, p = function (e) { var n = O.createElement(q), e = (n.src = e, t && (n.integrity = t), n.setAttribute("data-ai-name", E), cfg[w]); return !e && "" !== e || "undefined" == n[w] || (n[w] = e), n.onload = a, n.onerror = i, n.onreadystatechange = function (e, t) { "loaded" !== n.readyState && "complete" !== n.readyState || a(0, t) }, cfg.ld && cfg.ld < 0 ? O.getElementsByTagName("head")[0].appendChild(n) : setTimeout(function () { O.getElementsByTagName(q)[0].parentNode.appendChild(n) }, cfg.ld || 0), n }; p(d) } cfg.sri && (n = o.match(/^((http[s]?:\/\/.*\/)\w+(\.\d+){1,5})\.(([\w]+\.){0,2}js)$/)) && 6 === n.length ? (d = "".concat(n[1], ".integrity.json"), i = "@".concat(n[4]), l = window.fetch, t = function (e) { if (!e.ext || !e.ext[i] || !e.ext[i].file) throw Error("Error Loading JSON response"); var t = e.ext[i].integrity || null; s(o = n[2] + e.ext[i].file, t) }, l && !cfg.useXhr ? l(d, { method: "GET", mode: "cors" }).then(function (e) { return e.json()["catch"](function () { return {} }) }).then(t)["catch"](r) : XMLHttpRequest && ((a = new XMLHttpRequest).open("GET", d), a.onreadystatechange = function () { if (a.readyState === XMLHttpRequest.DONE) if (200 === a.status) try { t(JSON.parse(a.responseText)) } catch (e) { r() } else r() }, a.send())) : o && r(); try { h.cookie = O.cookie } catch (k) { } function e(e) { for (; e.length;)!function (t) { h[t] = function () { var e = arguments; f || h.queue.push(function () { h[t].apply(h, e) }) } }(e.pop()) } var c, u, l = "track", d = "TrackPage", p = "TrackEvent", l = (e([l + "Event", l + "PageView", l + "Exception", l + "Trace", l + "DependencyData", l + "Metric", l + "PageViewPerformance", "start" + d, "stop" + d, "start" + p, "stop" + p, "addTelemetryInitializer", "setAuthenticatedUserContext", "clearAuthenticatedUserContext", "flush"]), h.SeverityLevel = { Verbose: 0, Information: 1, Warning: 2, Error: 3, Critical: 4 }, (g.extensionConfig || {}).ApplicationInsightsAnalytics || {}); return !0 !== g[L] && !0 !== l[L] && (e(["_" + (c = "onerror")]), u = C[c], C[c] = function (e, t, n, i, a) { var o = u && u(e, t, n, i, a); return !0 !== o && h["_" + c]({ message: e, url: t, lineNumber: n, columnNumber: i, error: a, evt: C.event }), o }, g.autoExceptionInstrumented = !0), h }(cfg.cfg), (C[E] = n).queue && 0 === n.queue.length ? (n.queue.push(e), n.trackPageView({})) : e(); })({
+        src: "https://js.monitor.azure.com/scripts/b/ai.3.gbl.min.js",
+        crossOrigin: "anonymous",
+        cfg: {
+            connectionString: "InstrumentationKey=0970edb9-01a0-455d-a206-ea589b0c1a75;IngestionEndpoint=https://uksouth-1.in.applicationinsights.azure.com/;LiveEndpoint=https://uksouth.livediagnostics.monitor.azure.com/;ApplicationId=2d668410-89b9-4f0d-9c44-fc82793a3f08"
+        }
+    });
+</script>
+<script>
+var MyACCA = MyACCA || {};
+MyACCA.CurrentUser = {
+    contactid: "3f855b27-0388-42d9-9951-16a53fbb9a40"
+};
+</script>
+<link rel="stylesheet" type="text/css" href="https://services.postcodeanywhere.co.uk/css/address-3.95.css">
+<script type="text/javascript" src="https://services.postcodeanywhere.co.uk/js/address-3.95.js"></script>
+<script type="text/javascript" src="/myacca-form.js"></script>
+<script type="text/javascript" src="/myacca-address-loqate.js"></script>
+<script type="text/javascript" src="/myacca-loqate-phone.js"></script>
+<script type="text/javascript" src="/myacca-webapi.js"></script>
+<script type="text/javascript" src="/myacca-organisation-switch.js"></script>
+<script type="text/javascript" src="/myacca-application.js"></script>
+<script type="text/javascript" src="/myacca-application-telemetry.js" async=""></script>
+<script type="text/javascript" src="/myacca-notification.js"></script>
+<script type="text/javascript" src="/myacca-feedback.js"></script>
+	<script>
+        //this event will update the title of the page based on active breadcrumb
+        $('.breadcrumb').ready(function () {
+            if ($('.breadcrumb').is(':visible')) {
+                document.querySelector('title').innerHTML = ($('.breadcrumb > li.active').text() + "");
+            }
+        });
+
+        function GoToNewEditor() {
+            var editCmsUrlSegment = "EditInCms";
+            var currentUrl = window.location.href;
+            if (currentUrl.indexOf('?') > -1) {
+                var urlSegments = currentUrl.split("?");
+                window.location.href = window.location.origin + '/' + editCmsUrlSegment + window.location.pathname + '?' + urlSegments[1];
+            }
+            else {
+                window.location.href = window.location.origin + '/' + editCmsUrlSegment + window.location.pathname;
+            }
+        }
+    </script>
+	
+		
+		
+	
+		
+				<script>
+					if ('serviceWorker' in navigator) {
+						navigator.serviceWorker.getRegistrations().then(function (registrations) {
+							for (let registration of registrations) {
+								registration.unregister();
+							}
+						}).catch(function (err) {
+							console.log('Service Worker unregister action failed: ', err);
+						});
+					}
+				</script>
+			
+	
+		
+	<!--Start Show Session Expire Warning Popup here -->
+    
+		
+
+
+
+
+<script>_satellite["_runScript1"](function(event, target, Promise) {
+// debug logging function
+window.adobeDataLayer = window.adobeDataLayer || [];
+var myHandler = function (event) {
+    if (localStorage.getItem("com.adobe.reactor.debug") === "true") {
+        console.log(
+            "%c[Adobe Data Layer Logging] event type: " + event.event, "background: palegreen", "State:", JSON.stringify(adobeDataLayer.getState(), null, 2)
+        );
+    }
+};
+
+// add event listener
+window.adobeDataLayer.push(function (dl) {
+    dl.addEventListener("adobeDataLayer:event", myHandler);
+});
+
+});</script><!-- Forsta Digital Feedback Program -->
+<script id="cf-program-Qzq0BR" src="https://digitalfeedback.euro.confirmit.com/api/digitalfeedback/loader?programKey=Qzq0BR" async=""></script>
+<!-- End Forsta Digital Feedback Program -->
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J7W3P5MX6E"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); } 
+  gtag('js', new Date());
+
+  gtag('config', 'G-J7W3P5MX6E');
+
+</script><!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=DC-9391713"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'DC-9391713');
+
+  gtag('config', 'AW-968628456'); // Main Google Ads destination (MCC / consolidated)
+</script>
+<!-- End of global snippet --><script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+
+  ttq.load('CMRMLD3C77UEANSKJOK0');
+  ttq.page();
+}(window, document, 'ttq');
+</script><!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '283104012024433');
+  fbq('track', 'PageView');
+</script>
+<noscript></noscript>
+<!-- End Facebook Pixel Code --><link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#ffffff"
+    },
+    "button": {
+      "background": "#c80000",
+    }
+  },
+  "position": "top",
+  "static": true,
+  "content": {
+    "message": "<strong>ACCA's use of cookies.</strong> We use cookies to personalise your experience, and by using the site you are consenting to this.",
+    "dismiss": "Accept and close",
+    "link": "Find out more about cookies",
+    "href": "https://www.accaglobal.com/en/footertoolbar/privacy/acca-website-privacy-promise.html#szcookiedefer"
+  }
+})});
+</script><script async="" src="https://uk1.siteimprove.com/js/siteanalyze_11016.js"></script>
+<script>
+document.querySelectorAll('a[href^="http"]').forEach(function(link) {
+    link.addEventListener('touchend', function() {
+        window.location.href = link.href;
+    });
+});
+</script>
+</body><div id="eruda" style="all: initial;"></div><div class="__chobitsu-hide__" style="all: initial;"></div></html>
